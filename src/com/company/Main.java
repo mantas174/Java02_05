@@ -23,13 +23,21 @@ public class Main {
         sk1 = in.nextInt();
         sk2 = in.nextInt();
 
-        System.out.println("Suma: " + suma(sk1, sk2));
-        System.out.println("Skirtumas: " + skirtumas(sk1, sk2));
+        System.out.println("(int)Suma: " + suma(sk1, sk2));
+        System.out.println("(float) Suma: " + suma((float)sk1, (float)sk2));
+        System.out.println("(int) Skirtumas: " + skirtumas(sk1, sk2));
+        System.out.println("(float) Skirtumas: " + skirtumas((float)sk1, (float)sk2));
     }
     public static int suma(int a, int b){
         return a + b;
     }
+    public static float suma(float a, float b){
+        return a + b;
+    }
     public static int skirtumas(int a, int b){
+        return a - b;
+    }
+    public static float skirtumas(float a, float b){
         return a - b;
     }
 }
